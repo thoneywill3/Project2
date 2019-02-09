@@ -1,5 +1,5 @@
 /**
- * Created by eranda on 9/20/16.
+ * Test connection
  */
 
 module.exports = {
@@ -7,8 +7,8 @@ module.exports = {
         var mysql = require('mysql');
         var connection = mysql.createConnection({
             host: 'localhost',
-            user: 'eranda',
-            password: 'password'
+            user: 'root',
+            password: 'root'
         });
 
         connection.connect();

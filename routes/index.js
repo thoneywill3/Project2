@@ -8,13 +8,13 @@ var connection = conn.connection();
 
 var data;
 
-connection.query('SELECT * FROM node_shopping.products', function (err, rows) {
+connection.query('SELECT * FROM artistsdb.artist', function (err, rows) {
     if (err) throw err;
     data = rows;
 });
 
 router.use(session({
-    secret: 'keyboard cat',
+    secret: 'artist secret',
     resave: false,
     saveUninitialized: true
 }));
@@ -35,7 +35,7 @@ router.post('/', function (req, res) {
     var ids = Object.keys(cart);
 
     if (ids.length > 0) {
-        connection.query('SELECT * FROM node_shopping.products WHERE id IN (' + ids + ')', function (err, rows) {
+        connection.query('SELECT * FROM artistsdb.artist WHERE id IN (' + ids + ')', function (err, rows) {
             if (err) throw err;
             cart_data = rows;
             res.render('index', {title: 'Node Shopping', data: data, currency: 'Rs. ', cart_data: rows, cart: cart});
