@@ -23,7 +23,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bandaranaike/node-shopping.git"
+    "url": "git+https://github.com/thoneywill3/Project2.git"
   },
   "keywords": [
     "nodejs",
@@ -32,9 +32,9 @@
   "author": "bandaranaike",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bandaranaike/node-shopping/issues"
+    "url": "https://github.com/thoneywill3/Project2"
   },
-  "homepage": "https://github.com/bandaranaike/node-shopping#readme",
+  "homepage": "https://github.com/thoneywill3/Project2",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
